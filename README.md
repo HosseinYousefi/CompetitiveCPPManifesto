@@ -10,7 +10,7 @@ There are many style guides for C++ out there, but we can't really use them as c
 I'm going to use this guide for myself and to [teach my students](https://in.harbour.space/computer-science/modern-c-programming-hossein-yousefi/). I'm planning to make some good stuff in the future following these principles! Stay tuned!
 
 ## Compiler
-Make use of C++17. Use `-Wall -Wextra -Wshadow` flags for compilation, and try to eliminate all of the warning messages, this will prevent you from having some silly bugs.
+Make use of C++17. Use `-Wall -Wextra -Wshadow` flags for compilation, and try to eliminate all of the warning messages, this will prevent you from having some silly bugs. There are more debugging flags like `-fsanitize=undefined` which helps you eliminate bugs such as array out-of-range access and integer overflow during runtime. For more information, check out "Read More" section.
 
 ## Naming
 C++ libraries use snake_case for functions and classes, in order to differentiate the user-defined code from the standard library, we will use CamelCase.
@@ -149,7 +149,7 @@ int main() {
 * Boolean values are `true` and `false`!
 * Use `ios::sync_with_stdio(false);` and `cin.tie(nullptr);` for a faster I/O using `cin/cout`.
 * Use builtin functions starting with `__builtin`.
-* GCD and LCM are available in C++ under `gcd` and `lcm`.
+* GCD and LCM are available in C++17 under `gcd` and `lcm`.
 * Use C++11 for-each style for loops `for (auto& elem : vec)`.
 * Use C++17 binding style like `for (auto& [key, val] : dic)` and `auto [x, y] = myPoint;`
 * Use C++17 template argument deduction `pair p{1, 2.5};` instead of `pair<int, double> p{1, 2.5};`.
