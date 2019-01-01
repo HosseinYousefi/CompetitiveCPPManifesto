@@ -175,6 +175,7 @@ int main() {
 ## Read more
 * [Stroustrup: C++](http://www.stroustrup.com/C++.html) by Bjarne Stroustrup
 * [C++11 for programming contests...](https://codeforces.com/blog/entry/10124) by [user:mukel]
+* [Catching silly mistakes with GCC](https://codeforces.com/blog/entry/15547) by [user:andreyv]
 * [C++ Tricks](https://codeforces.com/blog/entry/15643) by [user:Swift]
 * [C++17, competitive programming edition](https://codeforces.com/blog/entry/57729) by [user:Igorjan94]
 
