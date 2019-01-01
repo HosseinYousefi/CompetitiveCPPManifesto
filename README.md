@@ -1,18 +1,18 @@
-#Competitive C++ Manifesto: A Style Guide
+# Competitive C++ Manifesto: A Style Guide
 
 
 There are many style guides for C++ out there, but we can't really use them as competitive programmers. We just want to write our code correctly as fast as possible! Trying to hack people here on codeforces, I realized there is a need for a style guide! Our goal is to write correct, fast, clear and consistent code.
 
-> ####Disclaimer
+> #### Disclaimer
 > This is not a rulebook. You can integrate parts of it into your coding style. 
 > Don't overthink it, especially during a contest!
 
 I'm going to use this guide for myself and to [teach my students](https://in.harbour.space/computer-science/modern-c-programming-hossein-yousefi/). I'm planning to make some good stuff in the future following these principles! Stay tuned!
 
-##Compiler
+## Compiler
 Make use of C++17. Use `-Wall -Wextra -Wshadow` flags for compilation, and try to eliminate all of the warning messages, this will prevent you from having some silly bugs.
 
-##Naming
+## Naming
 C++ libraries use snake_case for functions and classes, in order to differentiate the user-defined code from the standard library, we will use CamelCase.
 
 * Types use UpperCamelCase: `Point`, `SegTree`
@@ -20,7 +20,7 @@ C++ libraries use snake_case for functions and classes, in order to differentiat
 * Macros and constants use all capital letters seperated by `_`: `SOME_MACRO`, `MAX_N`, `MOD`
 * Use meaningful names or at least meaningful enough for you.
 
-######Example
+###### Example
 ```c++
 #define LOCAL
 const double PI = 3.14;
@@ -35,13 +35,13 @@ struct MyPoint {
 };
 ```
 
-> ####Note
+> #### Note
 > Using snake_case is fine, but be consistent!
 
-##Comments
+## Comments
 In competitive programming, you usually don't want to write long comments, but in case you do want to write some comments, write them using `//` instead of `/* */`. Using `//` enables you to comment out a chunk of code with `/* */` while debugging, and `/* /* ... */ */` is a bug!
 
-######Example
+###### Example
 ```c++
 /* commenting out a block of code - no problem!
  
@@ -53,7 +53,7 @@ void someFunction() {
 */
 ```
 
-##Spacing
+## Spacing
 
 > Control flow statements are `if / else / for / while / ...`
 
@@ -83,7 +83,7 @@ void someFunction() {
 * When overloading operators, treat them like functions, no spacing in the name like `bool operator!();`
 * Ellipsis `...` should **only** be spaced from the left side.
 
-######Example
+###### Example
 ```c++
 #include <bits/stdc++.h>
 
@@ -119,7 +119,7 @@ int main() {
 }
 ```
 
-######Output
+###### Output
 
 ```
 (0, 10)
@@ -128,7 +128,7 @@ int main() {
 (3, 13)
 (4, 14)
 ```
-##Competitive Coding Recommendations
+## Competitive Coding Recommendations
 
 * Use `#include <bits/stdc++.h>` instead of many includes. 
 * Use `using namespace std;` instead of typing `std::` every time.
@@ -172,11 +172,11 @@ int main() {
 * **Don't reinvent the wheel!** &mdash; *Make use of standard library!*
 * **Use common sense and be consistent!**
 
-##Read more
+## Read more
 * [Stroustrup: C++](http://www.stroustrup.com/C++.html) by Bjarne Stroustrup
 * [C++11 for programming contests...](https://codeforces.com/blog/entry/10124) by [user:mukel]
 * [C++ Tricks](https://codeforces.com/blog/entry/15643) by [user:Swift]
 * [C++17, competitive programming edition](https://codeforces.com/blog/entry/57729) by [user:Igorjan94]
 
-##Contribution
+## Contribution
 Any suggestions are welcome. You can contribute to this post by commenting or [using GitHub](https://github.com/HosseinYousefi/CompetitiveCPPManifesto).
